@@ -18,21 +18,41 @@
     <title>Figma landing page</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li></li>
-          <li><button>Sign Up</button></li>
-          <li><button>Request Demo</button></li>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav_item"><i class="fa-solid fa-globe"></i></li>
+          <li class="main-nav_item">
+            <button class="btn-signup font-regular">Sign Up</button>
+          </li>
+          <li class="main-nav_item">
+            <button class="btn-primary font-medium border-color-black">
+              Request Demo <i class="fa-solid fa-square-arrow-up-right"></i>
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Sign In</h1>
-        <h2>Hey, Enter your details to login to your account</h2>
+      <section class="main-signin">
+        <h1 class="font-bold">Sign in</h1>
+        <h2 class="font-regular">
+          Hey, Enter your details to login to your account
+        </h2>
         <form action="">
           <label for="email-phone"> Email/Phone </label>
           <input
@@ -50,21 +70,24 @@
             input
           />
           <div>
-            <span>Don't have an account yet? Register now!</span>
+            <span class="font-regular font-12">
+              >Don't have an account yet?
+              <a href="" class="register-link"> Register now!</a>
+            </span>
           </div>
           <button type="submit">Sign In</button>
         </form>
         <span>--Or Sign in with --</span>
         <div>
-          <button>Google</button>
-          <button>Apple ID</button>
-          <button>Facebook</button>
+          <button><i class="fa-brands fa-google"></i>Google</button>
+          <button><i class="fa-brands fa-apple"></i>Apple ID</button>
+          <button><i class="fa-brands fa-facebook"></i> Facebook</button>
         </div>
         <div>
           <span> Don't have an account? <a href="">Register now!</a></span>
         </div>
       </section>
-      <section>
+      <section class="main-img">
         <img src="./Imageloginscreen.png" alt="Imageloginscreen" />
       </section>
     </main>
