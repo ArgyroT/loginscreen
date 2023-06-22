@@ -75,7 +75,9 @@ button {
   background-color: white;
   height: 648px;
   width: 480px;
+  padding: 58px 52px 0 52px;
 }
+
 .main-img {
   display: inline-block;
 }
@@ -91,6 +93,7 @@ input {
   border-radius: 8px;
   width: 376px;
   height: 48px;
+  padding: 10px;
 }
 /* when you click in the field there wont be any black border */
 input:focus {
@@ -98,4 +101,26 @@ input:focus {
 }
 label {
   display: none;
+}
+input {
+  border: 1px solid #5d5d5d;
+  border-radius: 8px;
+  width: 376px;
+  height: 48px;
+  padding: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn-secondary:nth-child(2) {
+  margin: 0 8px;
+}
+
+.register-link,
+.register-link:visited,
+.register-link:focus {
+  text-decoration: none;
+  color: #000000;
 }
