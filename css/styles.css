@@ -124,3 +124,7 @@ input:focus {
   text-decoration: none;
   color: #000000;
 }
+/* INTERNAL WAY OF ADDING FONTS  */
+/* body {
+  font-family: "Roboto", sans-serif;
+} */
